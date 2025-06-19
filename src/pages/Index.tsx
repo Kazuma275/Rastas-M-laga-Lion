@@ -22,45 +22,46 @@ import { Link } from "react-router-dom";
 const Index = () => {
   const testimonials = [
     {
-      name: "María García",
+      name: "Ital Sister María",
       rating: 5,
-      text: "Increíble trabajo, mis rastas quedaron perfectas. El trato fue súper profesional y el ambiente muy agradable.",
-      service: "Rastas Nuevas",
+      text: "Jah bless! Increíble trabajo rastafari, mis rastas quedaron perfectas. El ambiente es pura good vibes.",
+      service: "Rastas Naturales Ital",
     },
     {
-      name: "Carlos Ruiz",
+      name: "Rasta Brother Carlos",
       rating: 5,
-      text: "Llevo 3 años viniendo para el mantenimiento. Siempre quedo satisfecho con el resultado.",
-      service: "Mantenimiento",
+      text: "Llevo 3 años viniendo para el mantenimiento irie. Siempre quedo blessed con el resultado.",
+      service: "Mantenimiento Irie",
     },
     {
-      name: "Ana López",
+      name: "Ras Ana Lion Heart",
       rating: 5,
-      text: "Las rastas con color que me hicieron son espectaculares. ¡Recibo cumplidos todos los días!",
-      service: "Rastas con Color",
+      text: "Las rastas con colores rastafari que me hicieron son espectaculares. ¡One Love!",
+      service: "Colores Rastafari",
     },
   ];
 
   const features = [
     {
       icon: Award,
-      title: "Experiencia Profesional",
-      description: "Más de 5 años especializándonos en todo tipo de rastas",
+      title: "Experiencia Rastafari Blessed",
+      description:
+        "Más de 5 años especializándonos en rastas auténticas jamaicanas",
     },
     {
       icon: Heart,
-      title: "Trato Personalizado",
-      description: "Cada cliente es único y merece un servicio adaptado",
+      title: "One Love Treatment",
+      description: "Cada cliente recibe amor y atención personalizada ital",
     },
     {
       icon: TrendingUp,
-      title: "Técnicas Actualizadas",
-      description: "Formación continua en las últimas tendencias",
+      title: "Técnicas Traditional Roots",
+      description: "Formación continua en técnicas rastafari tradicionales",
     },
     {
       icon: Users,
-      title: "Comunidad",
-      description: "Formamos parte de la comunidad rasta de Málaga",
+      title: "Irie Community",
+      description: "Formamos parte de la comunidad rastafari de Málaga",
     },
   ];
 
@@ -71,28 +72,31 @@ const Index = () => {
       <Services />
 
       {/* About Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-br from-sage-50 via-earth-50 to-gold-50">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-rasta-green-50 via-rasta-gold-50 to-rasta-red-50">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <Badge className="bg-sage-100 text-sage-800 mb-6">
-                Nuestra Historia
-              </Badge>
-              <h2 className="text-3xl md:text-5xl font-bold text-earth-800 mb-6">
-                Pasión por las <span className="text-gold-600">Rastas</span>
+              <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-rasta-red-100 via-rasta-gold-100 to-rasta-green-100 text-rasta-black-800 text-sm font-medium mb-6 border border-rasta-green-200">
+                <Heart className="w-4 h-4 mr-2 text-rasta-red-600" />
+                Nuestra Historia Rastafari
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold text-rasta-black-800 mb-6">
+                Pasión por las{" "}
+                <span className="text-rasta-red-600">Rastas</span>{" "}
+                <span className="text-rasta-gold-400">Ital</span>
               </h2>
-              <p className="text-xl text-earth-600 mb-6 leading-relaxed">
-                Soy una emprendedora apasionada por el arte de las rastas.
-                Comenzé este camino hace más de 5 años y desde entonces he
-                ayudado a cientos de personas a expresar su personalidad única a
-                través de este hermoso peinado.
+              <p className="text-xl text-rasta-black-600 mb-6 leading-relaxed">
+                Soy una emprendedora blessed con pasión por el arte rastafari de
+                las rastas. Comenzé este journey hace más de 5 años y desde
+                entonces he ayudado a cientos de personas a expresar su
+                spirituality única a través de este hermoso peinado blessed.
               </p>
-              <p className="text-earth-600 mb-8 leading-relaxed">
-                En Rastas Málaga Lions creemos que cada rasta cuenta una
-                historia. Utilizamos técnicas tradicionales combinadas con
-                innovación moderna para crear peinados que no solo se ven
-                increíbles, sino que también respetan la esencia cultural de las
-                rastas.
+              <p className="text-rasta-black-600 mb-8 leading-relaxed">
+                En Rastas Málaga Lions creemos que cada rasta cuenta una story
+                blessed by Jah. Utilizamos técnicas traditional jamaicanas
+                combinadas con love natural para crear peinados que no solo se
+                ven incredible, sino que también respetan la esencia cultural
+                rastafari. One Love, One Heart.
               </p>
 
               <div className="grid grid-cols-2 gap-6">
@@ -100,14 +104,14 @@ const Index = () => {
                   const IconComponent = feature.icon;
                   return (
                     <div key={index} className="flex items-start space-x-3">
-                      <div className="p-2 rounded-lg bg-white shadow-sm">
-                        <IconComponent className="w-5 h-5 text-gold-600" />
+                      <div className="p-2 rounded-lg bg-white shadow-sm border border-rasta-green-200">
+                        <IconComponent className="w-5 h-5 text-rasta-gold-600" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-earth-800 mb-1">
+                        <h4 className="font-semibold text-rasta-black-800 mb-1">
                           {feature.title}
                         </h4>
-                        <p className="text-sm text-earth-600">
+                        <p className="text-sm text-rasta-black-600">
                           {feature.description}
                         </p>
                       </div>
@@ -118,12 +122,23 @@ const Index = () => {
             </div>
 
             <div className="relative">
-              <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-earth-200 to-sage-200 aspect-[4/5] shadow-xl">
+              <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-rasta-red-200 via-rasta-gold-200 to-rasta-green-200 aspect-[4/5] shadow-xl border-4 border-white">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center text-earth-500">
+                  <div className="text-center text-rasta-black-500">
                     <Users size={64} className="mx-auto mb-4 opacity-50" />
-                    <p className="text-lg font-medium">Foto Personal</p>
-                    <p className="text-sm">Imagen de la artista trabajando</p>
+                    <p className="text-lg font-medium">Ital Sister Working</p>
+                    <p className="text-sm">Blessed Rastafari Artist</p>
+                  </div>
+                </div>
+
+                {/* Rastafari decorative elements */}
+                <div className="absolute top-4 right-4">
+                  <div className="w-16 h-16 rounded-full overflow-hidden border-4 border-white shadow-lg">
+                    <div className="h-full flex">
+                      <div className="flex-1 bg-rasta-red-600"></div>
+                      <div className="flex-1 bg-rasta-gold-400"></div>
+                      <div className="flex-1 bg-rasta-green-600"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -136,13 +151,14 @@ const Index = () => {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-earth-800 mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold text-rasta-black-800 mb-6">
               Lo que dicen nuestros{" "}
-              <span className="text-gold-600">Clientes</span>
+              <span className="text-rasta-green-600">Ital</span>{" "}
+              <span className="text-rasta-gold-400">Clients</span>
             </h2>
-            <p className="text-xl text-earth-600 max-w-2xl mx-auto">
-              La satisfacción de nuestros clientes es nuestra mayor recompensa.
-              Aquí algunas de sus experiencias.
+            <p className="text-xl text-rasta-black-600 max-w-2xl mx-auto">
+              La satisfacción blessed de nuestros clientes rastafari es nuestra
+              mayor recompensa. One Love testimonials.
             </p>
           </div>
 
@@ -150,26 +166,26 @@ const Index = () => {
             {testimonials.map((testimonial, index) => (
               <Card
                 key={index}
-                className="border-earth-100 hover:shadow-lg transition-shadow"
+                className="border-rasta-green-200 hover:shadow-lg transition-shadow"
               >
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
-                    <div className="flex text-gold-500 mr-2">
+                    <div className="flex text-rasta-gold-500 mr-2">
                       {[...Array(testimonial.rating)].map((_, i) => (
                         <Star key={i} size={16} fill="currentColor" />
                       ))}
                     </div>
                     <Badge
                       variant="secondary"
-                      className="bg-sage-100 text-sage-800"
+                      className="bg-rasta-green-100 text-rasta-green-800"
                     >
                       {testimonial.service}
                     </Badge>
                   </div>
-                  <p className="text-earth-700 mb-4 italic">
+                  <p className="text-rasta-black-700 mb-4 italic">
                     "{testimonial.text}"
                   </p>
-                  <p className="font-semibold text-earth-800">
+                  <p className="font-semibold text-rasta-black-800">
                     {testimonial.name}
                   </p>
                 </CardContent>
@@ -180,67 +196,79 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-earth-800 to-sage-800">
+      <section className="py-16 md:py-24 bg-gradient-to-r from-rasta-red-600 via-rasta-gold-500 to-rasta-green-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
             ¿Listo para tu nueva{" "}
-            <span className="text-gold-400">Transformación?</span>
+            <span className="text-rasta-black-800">Transformación</span>{" "}
+            <span className="text-white">Ital?</span>
           </h2>
-          <p className="text-xl text-earth-100 mb-8 max-w-2xl mx-auto">
-            Agenda tu cita hoy mismo y comienza tu viaje hacia un nuevo estilo
-            único y auténtico.
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            Agenda tu cita blessed hoy mismo y comienza tu journey hacia un
+            nuevo estilo rastafari único y auténtico. Jah Bless!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild
               size="lg"
-              className="bg-gold-600 hover:bg-gold-700 text-white px-8 py-3 text-lg"
+              className="bg-white text-rasta-green-700 hover:bg-gray-100 px-8 py-3 text-lg"
             >
-              <Link to="/reservas">Reservar Ahora</Link>
+              <Link to="/reservas">Bless Up - Reservar Ahora</Link>
             </Button>
             <Button
               asChild
               variant="outline"
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-earth-800 px-8 py-3 text-lg"
+              className="border-white text-white hover:bg-white hover:text-rasta-green-700 px-8 py-3 text-lg"
             >
-              <Link to="/contacto">Contactar</Link>
+              <Link to="/contacto">One Love Contact</Link>
             </Button>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="bg-earth-900 text-white py-12">
+      <footer className="bg-rasta-black-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             {/* Brand */}
             <div className="col-span-2 md:col-span-1">
               <div className="flex items-center space-x-2 mb-4">
-                <span className="text-xl font-bold">Rastas</span>
-                <span className="text-xl font-bold text-gold-400">Málaga</span>
-                <span className="text-xl font-bold text-sage-400">Lions</span>
+                <span className="text-xl font-bold text-rasta-red-400">
+                  Rastas
+                </span>
+                <span className="text-xl font-bold text-rasta-gold-400">
+                  Málaga
+                </span>
+                <span className="text-xl font-bold text-rasta-green-400">
+                  Lions
+                </span>
+                <div className="flex flex-col w-1 h-6 ml-2">
+                  <div className="flex-1 bg-rasta-red-600"></div>
+                  <div className="flex-1 bg-rasta-gold-400"></div>
+                  <div className="flex-1 bg-rasta-green-600"></div>
+                </div>
               </div>
-              <p className="text-earth-300 mb-4">
-                Especializados en rastas auténticas en el corazón de Málaga.
-                Transforma tu estilo con nosotros.
+              <p className="text-gray-300 mb-4">
+                Especializados en rastas auténticas rastafari en el corazón de
+                Málaga. One Love, One Heart en cada trabajo blessed.
               </p>
               <div className="flex space-x-4">
                 <a
                   href="https://wa.me/34666777888"
-                  className="text-earth-300 hover:text-gold-400 transition-colors"
+                  className="text-gray-300 hover:text-rasta-green-400 transition-colors"
                 >
                   <MessageCircle size={20} />
                 </a>
                 <a
                   href="https://instagram.com/rastasmalagalions"
-                  className="text-earth-300 hover:text-gold-400 transition-colors"
+                  className="text-gray-300 hover:text-rasta-red-400 transition-colors"
                 >
                   <Instagram size={20} />
                 </a>
                 <a
                   href="https://facebook.com/rastasmalagalions"
-                  className="text-earth-300 hover:text-gold-400 transition-colors"
+                  className="text-gray-300 hover:text-rasta-gold-400 transition-colors"
                 >
                   <Facebook size={20} />
                 </a>
@@ -249,25 +277,27 @@ const Index = () => {
 
             {/* Services */}
             <div>
-              <h3 className="font-semibold mb-4 text-white">Servicios</h3>
-              <ul className="space-y-2 text-earth-300">
+              <h3 className="font-semibold mb-4 text-white">
+                Servicios Blessed
+              </h3>
+              <ul className="space-y-2 text-gray-300">
                 <li>
-                  <Link to="/reservas" className="hover:text-gold-400">
-                    Rastas Nuevas
+                  <Link to="/reservas" className="hover:text-rasta-gold-400">
+                    Rastas Naturales Ital
                   </Link>
                 </li>
                 <li>
-                  <Link to="/reservas" className="hover:text-gold-400">
-                    Mantenimiento
+                  <Link to="/reservas" className="hover:text-rasta-gold-400">
+                    Mantenimiento Irie
                   </Link>
                 </li>
                 <li>
-                  <Link to="/reservas" className="hover:text-gold-400">
-                    Rastas con Color
+                  <Link to="/reservas" className="hover:text-rasta-gold-400">
+                    Colores Rastafari
                   </Link>
                 </li>
                 <li>
-                  <Link to="/reservas" className="hover:text-gold-400">
+                  <Link to="/reservas" className="hover:text-rasta-gold-400">
                     Rastas Sintéticas
                   </Link>
                 </li>
@@ -276,26 +306,26 @@ const Index = () => {
 
             {/* Quick Links */}
             <div>
-              <h3 className="font-semibold mb-4 text-white">Enlaces</h3>
-              <ul className="space-y-2 text-earth-300">
+              <h3 className="font-semibold mb-4 text-white">Ital Links</h3>
+              <ul className="space-y-2 text-gray-300">
                 <li>
-                  <Link to="/galeria" className="hover:text-gold-400">
-                    Galería
+                  <Link to="/galeria" className="hover:text-rasta-gold-400">
+                    Galería Blessed
                   </Link>
                 </li>
                 <li>
-                  <Link to="/tienda" className="hover:text-gold-400">
-                    Tienda
+                  <Link to="/tienda" className="hover:text-rasta-gold-400">
+                    Ital Shop
                   </Link>
                 </li>
                 <li>
-                  <Link to="/reservas" className="hover:text-gold-400">
-                    Reservas
+                  <Link to="/reservas" className="hover:text-rasta-gold-400">
+                    Book Session
                   </Link>
                 </li>
                 <li>
-                  <Link to="/contacto" className="hover:text-gold-400">
-                    Contacto
+                  <Link to="/contacto" className="hover:text-rasta-gold-400">
+                    One Love Contact
                   </Link>
                 </li>
               </ul>
@@ -303,15 +333,17 @@ const Index = () => {
 
             {/* Contact */}
             <div>
-              <h3 className="font-semibold mb-4 text-white">Contacto</h3>
-              <div className="space-y-2 text-earth-300">
+              <h3 className="font-semibold mb-4 text-white">
+                Contacto Rastafari
+              </h3>
+              <div className="space-y-2 text-gray-300">
                 <div className="flex items-center">
                   <Phone size={16} className="mr-2" />
                   <span>+34 666 777 888</span>
                 </div>
                 <div className="flex items-center">
                   <Mail size={16} className="mr-2" />
-                  <span>info@rastasmalagalions.com</span>
+                  <span>ital@rastasmalagalions.com</span>
                 </div>
                 <div className="flex items-start">
                   <MapPin size={16} className="mr-2 mt-1" />
@@ -321,8 +353,11 @@ const Index = () => {
             </div>
           </div>
 
-          <div className="border-t border-earth-700 mt-8 pt-8 text-center text-earth-400">
-            <p>© 2024 Rastas Málaga Lions. Todos los derechos reservados.</p>
+          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+            <p>
+              © 2024 Rastas Málaga Lions. Jah Bless - Todos los derechos
+              reservados. One Love ❤️💛💚
+            </p>
           </div>
         </div>
       </footer>

@@ -15,6 +15,7 @@ import {
   Clock,
   Euro,
   ArrowRight,
+  Heart,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 
@@ -22,59 +23,63 @@ const Services = () => {
   const services = [
     {
       icon: Scissors,
-      title: "Rastas Nuevas",
+      title: "Rastas Naturales Ital",
       description:
-        "Creación completa de rastas desde cero con técnicas profesionales.",
+        "Creación completa de rastas blessed con técnicas tradicionales jamaicanas.",
       duration: "4-6 horas",
       price: "Desde 120€",
       features: [
-        "Consulta personalizada",
-        "Técnica tradicional",
-        "Cuidado post-servicio",
+        "Consulta personalizada one-on-one",
+        "Técnica traditional roots",
+        "Blessed with natural oils",
       ],
-      badge: "Más Popular",
-      badgeColor: "bg-gold-100 text-gold-800",
+      badge: "Most Blessed",
+      badgeColor: "bg-rasta-gold-300 text-rasta-gold-800",
     },
     {
       icon: RefreshCw,
-      title: "Mantenimiento",
+      title: "Mantenimiento Irie",
       description:
-        "Cuidado y retoque de tus rastas existentes para mantenerlas perfectas.",
+        "Cuidado blessed para mantener tus rastas con good vibes siempre.",
       duration: "2-3 horas",
       price: "Desde 60€",
-      features: ["Reapretado de raíces", "Limpieza profunda", "Hidratación"],
-      badge: "Recomendado",
-      badgeColor: "bg-sage-100 text-sage-800",
+      features: [
+        "Root maintenance natural",
+        "Limpieza con aceites ital",
+        "Hidratación blessed",
+      ],
+      badge: "Regular Vibes",
+      badgeColor: "bg-rasta-green-100 text-rasta-green-800",
     },
     {
       icon: Palette,
-      title: "Rastas con Color",
+      title: "Colores Rastafari",
       description:
-        "Dale vida a tus rastas con colores vibrantes y técnicas de teñido.",
+        "Dale vida rasta con los colores sagrados: rojo, dorado y verde blessed.",
       duration: "5-7 horas",
       price: "Desde 150€",
       features: [
-        "Colores naturales/fantasia",
-        "Decoloración incluida",
-        "Tratamiento protector",
+        "Colores rastafari tradicionales",
+        "Tintes naturales blessed",
+        "Tratamiento protector ital",
       ],
-      badge: "Especial",
-      badgeColor: "bg-earth-100 text-earth-800",
+      badge: "Rasta Colors",
+      badgeColor: "bg-rasta-red-100 text-rasta-red-800",
     },
     {
       icon: Sparkles,
       title: "Rastas Sintéticas",
       description:
-        "Extensiones de rastas sintéticas para un cambio rápido y temporal.",
+        "Extensiones blessed para un cambio temporal con estilo rastafari.",
       duration: "3-4 horas",
       price: "Desde 80€",
       features: [
-        "Múltiples colores",
-        "Instalación rápida",
-        "Fácil mantenimiento",
+        "Colores rasta disponibles",
+        "Instalación quick & blessed",
+        "Mantenimiento easy",
       ],
-      badge: "Temporal",
-      badgeColor: "bg-gold-100 text-gold-800",
+      badge: "Temporal Irie",
+      badgeColor: "bg-rasta-gold-100 text-rasta-gold-800",
     },
   ];
 
@@ -83,13 +88,18 @@ const Services = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-earth-800 mb-6">
-            Nuestros <span className="text-gold-600">Servicios</span>
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-rasta-red-100 via-rasta-gold-100 to-rasta-green-100 text-rasta-black-800 text-sm font-medium mb-6 border border-rasta-green-200">
+            <Heart className="w-4 h-4 mr-2 text-rasta-red-600" />
+            Servicios Blessed con One Love
+          </div>
+          <h2 className="text-3xl md:text-5xl font-bold text-rasta-black-800 mb-6">
+            Nuestros <span className="text-rasta-red-600">Servicios</span>{" "}
+            <span className="text-rasta-gold-400">Ital</span>
           </h2>
-          <p className="text-xl text-earth-600 max-w-3xl mx-auto leading-relaxed">
-            Ofrecemos una amplia gama de servicios profesionales para crear y
-            mantener tus rastas perfectas, adaptándonos a tu estilo y
-            necesidades.
+          <p className="text-xl text-rasta-black-600 max-w-3xl mx-auto leading-relaxed">
+            Ofrecemos servicios auténticos rastafari, blessed con técnicas
+            tradicionales jamaicanas y good vibes naturales para tu
+            transformación ital.
           </p>
         </div>
 
@@ -100,7 +110,7 @@ const Services = () => {
             return (
               <Card
                 key={index}
-                className="relative group hover:shadow-xl transition-all duration-300 border-earth-100"
+                className="relative group hover:shadow-xl transition-all duration-300 border-rasta-green-200 hover:border-rasta-green-300"
               >
                 {/* Badge */}
                 <div className="absolute -top-3 left-6 z-10">
@@ -108,13 +118,13 @@ const Services = () => {
                 </div>
 
                 <CardHeader className="text-center pt-8">
-                  <div className="mx-auto mb-4 p-3 rounded-full bg-gradient-to-br from-gold-100 to-sage-100 w-fit">
-                    <IconComponent className="w-8 h-8 text-earth-700" />
+                  <div className="mx-auto mb-4 p-3 rounded-full bg-gradient-to-br from-rasta-gold-100 via-rasta-green-100 to-rasta-red-100 w-fit">
+                    <IconComponent className="w-8 h-8 text-rasta-black-700" />
                   </div>
-                  <CardTitle className="text-xl text-earth-800 mb-2">
+                  <CardTitle className="text-xl text-rasta-black-800 mb-2">
                     {service.title}
                   </CardTitle>
-                  <CardDescription className="text-earth-600">
+                  <CardDescription className="text-rasta-black-600">
                     {service.description}
                   </CardDescription>
                 </CardHeader>
@@ -122,11 +132,11 @@ const Services = () => {
                 <CardContent className="space-y-4">
                   {/* Duration & Price */}
                   <div className="flex justify-between items-center text-sm">
-                    <div className="flex items-center text-earth-600">
+                    <div className="flex items-center text-rasta-black-600">
                       <Clock className="w-4 h-4 mr-1" />
                       {service.duration}
                     </div>
-                    <div className="flex items-center font-semibold text-gold-700">
+                    <div className="flex items-center font-semibold text-rasta-gold-700">
                       <Euro className="w-4 h-4 mr-1" />
                       {service.price}
                     </div>
@@ -137,9 +147,9 @@ const Services = () => {
                     {service.features.map((feature, idx) => (
                       <li
                         key={idx}
-                        className="flex items-center text-sm text-earth-600"
+                        className="flex items-center text-sm text-rasta-black-600"
                       >
-                        <div className="w-1.5 h-1.5 bg-sage-500 rounded-full mr-3"></div>
+                        <div className="w-1.5 h-1.5 bg-rasta-green-500 rounded-full mr-3"></div>
                         {feature}
                       </li>
                     ))}
@@ -148,10 +158,10 @@ const Services = () => {
                   {/* CTA Button */}
                   <Button
                     asChild
-                    className="w-full mt-6 bg-earth-700 hover:bg-earth-800 text-white group-hover:bg-gold-600 group-hover:hover:bg-gold-700 transition-all"
+                    className="w-full mt-6 bg-rasta-green-600 hover:bg-rasta-green-700 text-white group-hover:bg-rasta-gold-500 group-hover:hover:bg-rasta-gold-600 transition-all"
                   >
                     <Link to="/reservas">
-                      Reservar
+                      Bless Up - Reservar
                       <ArrowRight className="ml-2 w-4 h-4" />
                     </Link>
                   </Button>
@@ -162,22 +172,23 @@ const Services = () => {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center bg-gradient-to-r from-earth-50 to-sage-50 rounded-2xl p-8 md:p-12">
-          <h3 className="text-2xl md:text-3xl font-bold text-earth-800 mb-4">
-            ¿No estás seguro qué servicio necesitas?
+        <div className="text-center bg-gradient-to-r from-rasta-green-50 via-rasta-gold-50 to-rasta-red-50 rounded-2xl p-8 md:p-12 border border-rasta-green-200">
+          <h3 className="text-2xl md:text-3xl font-bold text-rasta-black-800 mb-4">
+            ¿No estás seguro qué servicio{" "}
+            <span className="text-rasta-green-600">blessed</span> necesitas?
           </h3>
-          <p className="text-earth-600 mb-6 max-w-2xl mx-auto">
-            Agenda una consulta gratuita y te ayudaremos a elegir el mejor
-            tratamiento para tu tipo de cabello y estilo personal.
+          <p className="text-rasta-black-600 mb-6 max-w-2xl mx-auto">
+            Agenda una consulta ital gratuita y te ayudaremos a elegir el mejor
+            tratamiento rastafari para tu tipo de cabello y vibe personal.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button
               asChild
               size="lg"
-              className="bg-gold-600 hover:bg-gold-700 text-white"
+              className="bg-rasta-gold-500 hover:bg-rasta-gold-600 text-white"
             >
               <Link to="/contacto">
-                Consulta Gratuita
+                Consulta Ital Gratuita
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
@@ -185,9 +196,9 @@ const Services = () => {
               asChild
               variant="outline"
               size="lg"
-              className="border-earth-300 text-earth-700 hover:bg-earth-50"
+              className="border-rasta-green-300 text-rasta-green-700 hover:bg-rasta-green-50"
             >
-              <Link to="/galeria">Ver Nuestro Trabajo</Link>
+              <Link to="/galeria">Ver Nuestros Blessed Works</Link>
             </Button>
           </div>
         </div>
