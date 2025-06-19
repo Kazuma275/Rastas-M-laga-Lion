@@ -2,7 +2,7 @@ services:
   - type: web
     name: rastas-malaga-lions
     env: static
-    buildCommand: npm install && npm run build
+    buildCommand: npm install && npm run build:render
     staticPublishPath: ./dist
     headers:
       - path: /*
