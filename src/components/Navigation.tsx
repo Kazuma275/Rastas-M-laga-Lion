@@ -32,7 +32,9 @@ const Navigation = () => {
       className={`font-medium transition-colors ${
         mobile ? "block py-2 text-lg" : "text-sm"
       } ${
-        isActive(href) ? "text-gold-600" : "text-earth-700 hover:text-gold-600"
+        isActive(href)
+          ? "text-rasta-gold-600"
+          : "text-rasta-black-700 hover:text-rasta-gold-600"
       }`}
       onClick={() => mobile && setIsOpen(false)}
     >
@@ -41,19 +43,26 @@ const Navigation = () => {
   );
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+    <header className="sticky top-0 z-50 w-full border-b border-rasta-green-200 bg-white/95 backdrop-blur supports-[backdrop-filter]:bg-white/60">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
+          {/* Logo with Jamaican Colors */}
           <Link to="/" className="flex items-center space-x-2">
             <div className="flex items-center">
-              <span className="text-xl font-bold text-earth-800">Rastas</span>
-              <span className="ml-1 text-xl font-bold text-gold-600">
+              <span className="text-xl font-bold text-rasta-red-600">
+                Rastas
+              </span>
+              <span className="ml-1 text-xl font-bold text-rasta-gold-400">
                 Málaga
               </span>
-              <span className="ml-1 text-xl font-bold text-sage-700">
+              <span className="ml-1 text-xl font-bold text-rasta-green-600">
                 Lions
               </span>
+            </div>
+            <div className="flex flex-col w-1 h-6">
+              <div className="flex-1 bg-rasta-red-600"></div>
+              <div className="flex-1 bg-rasta-gold-400"></div>
+              <div className="flex-1 bg-rasta-green-600"></div>
             </div>
           </Link>
 
@@ -71,7 +80,7 @@ const Navigation = () => {
                 href="https://wa.me/34666777888"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sage-600 hover:text-sage-700 transition-colors"
+                className="text-rasta-green-600 hover:text-rasta-green-700 transition-colors"
               >
                 <MessageCircle size={20} />
               </a>
@@ -79,7 +88,7 @@ const Navigation = () => {
                 href="https://instagram.com/rastasmalagalions"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sage-600 hover:text-sage-700 transition-colors"
+                className="text-rasta-red-600 hover:text-rasta-red-700 transition-colors"
               >
                 <Instagram size={20} />
               </a>
@@ -87,12 +96,12 @@ const Navigation = () => {
                 href="https://facebook.com/rastasmalagalions"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sage-600 hover:text-sage-700 transition-colors"
+                className="text-rasta-gold-600 hover:text-rasta-gold-700 transition-colors"
               >
                 <Facebook size={20} />
               </a>
             </div>
-            <Button className="bg-gold-600 hover:bg-gold-700 text-white">
+            <Button className="bg-gradient-to-r from-rasta-red-600 to-rasta-gold-500 hover:from-rasta-red-700 hover:to-rasta-gold-600 text-white border-0">
               <Phone size={16} className="mr-2" />
               Llamar Ahora
             </Button>
@@ -108,13 +117,20 @@ const Navigation = () => {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <div className="flex flex-col space-y-4 mt-8">
                 <div className="flex items-center space-x-2 mb-6">
-                  <span className="text-lg font-bold text-earth-800">
+                  <span className="text-lg font-bold text-rasta-red-600">
                     Rastas
                   </span>
-                  <span className="text-lg font-bold text-gold-600">
+                  <span className="text-lg font-bold text-rasta-gold-400">
                     Málaga
                   </span>
-                  <span className="text-lg font-bold text-sage-700">Lions</span>
+                  <span className="text-lg font-bold text-rasta-green-600">
+                    Lions
+                  </span>
+                  <div className="flex flex-col w-1 h-6 ml-2">
+                    <div className="flex-1 bg-rasta-red-600"></div>
+                    <div className="flex-1 bg-rasta-gold-400"></div>
+                    <div className="flex-1 bg-rasta-green-600"></div>
+                  </div>
                 </div>
 
                 <nav className="flex flex-col space-y-2">
@@ -124,7 +140,7 @@ const Navigation = () => {
                 </nav>
 
                 <div className="pt-6 border-t">
-                  <Button className="w-full bg-gold-600 hover:bg-gold-700 text-white mb-4">
+                  <Button className="w-full bg-gradient-to-r from-rasta-red-600 to-rasta-gold-500 hover:from-rasta-red-700 hover:to-rasta-gold-600 text-white border-0 mb-4">
                     <Phone size={16} className="mr-2" />
                     Llamar Ahora
                   </Button>
@@ -134,7 +150,7 @@ const Navigation = () => {
                       href="https://wa.me/34666777888"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sage-600 hover:text-sage-700 transition-colors"
+                      className="text-rasta-green-600 hover:text-rasta-green-700 transition-colors"
                     >
                       <MessageCircle size={24} />
                     </a>
@@ -142,7 +158,7 @@ const Navigation = () => {
                       href="https://instagram.com/rastasmalagalions"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sage-600 hover:text-sage-700 transition-colors"
+                      className="text-rasta-red-600 hover:text-rasta-red-700 transition-colors"
                     >
                       <Instagram size={24} />
                     </a>
@@ -150,7 +166,7 @@ const Navigation = () => {
                       href="https://facebook.com/rastasmalagalions"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sage-600 hover:text-sage-700 transition-colors"
+                      className="text-rasta-gold-600 hover:text-rasta-gold-700 transition-colors"
                     >
                       <Facebook size={24} />
                     </a>
