@@ -17,7 +17,14 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter
+        basename={
+          process.env.NODE_ENV === "production" &&
+          window.location.hostname.includes("github.io")
+            ? "/Rastas-M-laga-Lion"
+            : ""
+        }
+      >
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/galeria" element={<Gallery />} />
