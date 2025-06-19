@@ -152,6 +152,8 @@ src/
 - **Carrito Funcional**: Add to cart, cantidad, estados
 - **Productos Auténticos**: Aceite de canela y otros productos jamaicanos
 - **Temática 100% Rastafari**: Colores, terminología y ambiente auténtico
+
+  Sergio Ramos Alarcón
 - **Mobile Optimized**: Perfecto en cualquier dispositivo
 - **One Love Experience**: Cada detalle refleja la cultura rastafari
 
